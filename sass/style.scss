@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.right-nav {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  display: inline-block;
+  margin: 0;
+  >li{
+    display: inline-block;
+    margin: 11px;
+    a {
+      font-size: 25px;
+    }
+  }
+}
+
+header.title {
+  display: inline-block;
+  font-size: 25px;
+  margin: 9px;
+ 
+}
+
+nav {
+  height: 50px;
+  background-color: rgba(32, 129, 100, .5);
+  a {
+    transition: all .5s ease-out;
+     text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.auth.ng-enter, .auth.ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+    transition:all .5s ease-in-out;
+}
+
+.auth.ng-enter {
+  opacity: 0;
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+.auth.ng-enter-active {
+  opacity: 1;
+  transform:scale3d(1, 1, 1);
+}
+
+.auth.ng-leave {
+  opacity: 1; 
+  transform:translate3d(0, 0, 0);
+}
+
+.auth.ng-leave-active {
+  opacity: 0;
+  transform:translate3d(100px, 0, 0);
+}

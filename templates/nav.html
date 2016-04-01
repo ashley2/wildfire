@@ -1,0 +1,7 @@
+<nav>
+  <header class="title"><a ui-sref="home">REMOVETHISTITLE</a></header>
+  <ul class="right-nav">
+    <li ng-hide="isLoggedIn"><a ui-sref="auth.login">Login</a></li>
+    <li ng-show="isLoggedOut"><a ng-click="logout()">Logout</a></li>
+  </ul>
+</nav>
